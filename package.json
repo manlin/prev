@@ -1,0 +1,25 @@
+{
+  "name": "prev-node",
+  "version": "1.0.0",
+  "description": "prev node",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manlin/prev.git"
+  },
+  "keywords": [
+    "prev"
+  ],
+  "author": "Peng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manlin/prev/issues"
+  },
+  "homepage": "https://github.com/manlin/prev#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
