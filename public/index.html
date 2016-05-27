@@ -9,6 +9,16 @@
 <script type="text/javascript">
     setTimeout(function() {
         document.title = 'Changed Title';
+        // 
+        var iframe = document.createElement('iframe');
+        iframe.setAttribute('src', '/favicon.ico');
+        iframe.addEventListener('load', function cb() {
+            setTimeout(function() {
+                iframe.removeEventListener('load', cb);
+                document.body.removeChild(iframe);
+            }, 0);
+        });
+        document.body.appendChild(iframe);
     }, 5000);
 </script>
 </body>
