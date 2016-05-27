@@ -11,8 +11,9 @@
         document.title = 'Changed Title';
         // 
         var iframe = document.createElement('iframe');
-        //iframe.setAttribute('src', '/favicon.ico');
+        iframe.setAttribute('src', '/favicon.ico');
         iframe.setAttribute('height', '0');
+        iframe.setAttribute('width', '0');
         iframe.addEventListener('load', function cb() {
             setTimeout(function() {
                 iframe.removeEventListener('load', cb);
